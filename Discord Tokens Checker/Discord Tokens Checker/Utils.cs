@@ -151,7 +151,7 @@ namespace Utils
                             this.GuildsCount++;
                             break;
                         case "owner":
-                            if (fieldValue == "true") this.GuildsOwnershipCount++;
+                            this.GuildsOwnershipCount = fieldValue == "true" ? this.GuildsOwnershipCount + 1:this.GuildsOwnershipCount;
                             break;
                     }
                 }
